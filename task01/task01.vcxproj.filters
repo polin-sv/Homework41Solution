@@ -21,9 +21,15 @@
     <ClCompile Include="logic.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logic.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
