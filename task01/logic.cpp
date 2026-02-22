@@ -1,22 +1,20 @@
 #include "logic.h"
 
-string count_elements(int array[DEFAULT_SIZE],int length) {
-	
-	int count_even = 0;
-	int count_odd = 0;
+bool check_the_same(int array[DEFAULT_SIZE], int length) {
 
-	for (int index = 0; index < length;index++) {
-		array[index] = array[index] < 0 ? array[index] * -1 : array[index];
-		if (array[index] % 2 == 0) {
-			count_even += 1;
+	bool result=false;
+
+	for (int index = 1; index < length; index++) {
+		
+		if (array[0] == array[index]) {
+			result = true;
 		}
-		else {
-			count_odd += 1;
+		else
+		{
+			return false;
+
 		}
 	}
 
-	string result = "even numbers: " + to_string(count_even)
-		+ "\nodd numbers: " + to_string(count_odd);
-
-	return result;
+	return result;;
 }

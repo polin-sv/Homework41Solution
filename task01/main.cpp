@@ -11,8 +11,12 @@ int main() {
 	} while (length <= 0);
 
 	user_init(array, length);
+	
 
-	print(count_elements(array, length));
+	string msg = check_the_same(array, length) ? "yes" : "no";
+
+	print("are elements the same? ");
+	print(msg);
 	
 	return 0;
 }

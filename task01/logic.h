@@ -4,4 +4,4 @@
 
 using namespace std;
 
-string count_elements(int array[DEFAULT_SIZE],int length);
+bool check_the_same(int array[DEFAULT_SIZE],int length);
